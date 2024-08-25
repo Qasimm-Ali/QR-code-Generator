@@ -8,7 +8,8 @@ export default function QRcode(){
         ref.current.value =""
     }
     return<div className="h-screen w-screen flex justify-center items-center flex-wrap gap-5 ">
-        <div className="flex flex-col items-center gap-4 ">
+        <div className="text-white text-3xl font-sans absolute top-10 ">Qr Code Generator</div>
+        <div className="flex flex-col items-center gap-4 max-sm:mt-20 ">
             <input className="border-[2px] border-black rounded-md p-1 w-[16rem] outline-none " type="text" name="text" ref={ref}  />
             <p>
             <button className="bg-neutral-700 text-neutral-400 p-2 rounded-md cursor-pointer hover:text-neutral-200" onClick={handleClick}>Generate</button>
